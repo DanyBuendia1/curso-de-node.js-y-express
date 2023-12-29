@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Crud de usuario</title>
+  </head>
+  <body>
+
+    <div>
+        <h2>GET</h2>
+        <form id="getusuario">
+            <input type="number" name="idUsuario" placeholder="id de usuario" id="id">
+            <input type="submit" value="Buscar">
+        </form>
+        <p id="textoget"></p>
+    </div>
+
+    <div>
+        <h2>POST</h2>
+
+        <form id="postusuario">
+            <input type="text" id="nombre" placeholder="Nombre"><br><br>
+            <input type="text" id="apellido" placeholder="Apellido"><br><br>
+            <input type="number" id="edad" placeholder="Edad"><br><br>
+
+            <input type="submit" value="Registrar">
+        </form>
+        <p id="textopost"></p>
+    </div>
+
+    <div>
+        <h3>PUT</h3>
+        <form id="putusuario">
+            <input placeholder="id de usuario" type="number" name="idUduarioPut" id="id"><br><br>
+            <input placeholder="nombre" type="text" name="nombreUsuarioPut" id="nombre"><br><br>
+            <input placeholder="apellido" type="text" name="apellidoUsuarioPut" id="apellido"><br><br>
+            <input placeholder="edad" type="number" name="edadUsuarioPut" id="edad"><br><br>
+
+            <input type="submit" value="Modificar">
+        </form>
+        <p id="textoput"></p>
+    </div>
+
+    <div>
+        <h2>DELETE</h2>
+        <form id="deleteusuario">
+            <input type="number" name="edad" id="id" placeholder="Id de usuario"><br><br>
+
+            <input type="submit" value="Eliminar">
+        </form>
+        <p id="textodelete"></p>
+    </div>
+    <!--
+    <div class="container">
+        <div class="create_user text-center">
+            <h1>Crear usuario</h1>
+            <input type="text" id="nombre" placeholder="Ingresa tu nombre"><br><br>
+
+            <input type="text" id="apellido" placeholder="Ingresa tu apellido"><br><br>
+
+            <input type="number" id="edad" placeholder="Ingresa tu edad"><br><br>
+
+            <button id="registrar">Registrar</button>
+            
+            <p id="informacionpost"></p>
+        </div>
+
+        <div class="busquedarusuario text-center">
+            <h1>Busqueda de usuario</h1>
+            <input type="number" id="buscarid" placeholder="Id de usuario">
+            <button id="buscar">Buscar</button>
+
+            <p id="informacionget"></p>
+        </div>
+
+        <div class="actualizar text-center">
+            <h1>Actualizar usuario</h1>
+            <input type="number" placeholder="Id de usuario" id="idactualizar"><br><br>
+
+            <input type="text" placeholder="Nombre de usuario" id="nombreactualizar"><br><br>
+
+            <input type="text" placeholder="apellido" id="apellidoactualizar"><br><br>
+            <input type="number" placeholder="Edad" id="edadactualizar"><br><br>
+
+
+            <button id="actualizar">Actualizar</button>
+            
+            <p id="informacionput"></p>
+        </div>
+
+        <div class="eliminar text-center">
+            <h1>Eliminar Usuarios</h1>
+            <input type="number" id="eliminarid" placeholder="Id de Usuario">
+            <button id="botoneliminar">Eliminar</button>
+            
+            <p id="informaciondelete"></p>
+        </div>
+
+        </div>
+    </div>
+-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+    </body>
+</html>

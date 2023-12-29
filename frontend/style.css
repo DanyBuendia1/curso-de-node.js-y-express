@@ -1,0 +1,10 @@
+div{
+    margin: 0 auto;
+    width: 25%;
+    border: solid;
+    padding: 15px;
+    text-align: center;
+}
+input::placeholder{
+    text-align: center;
+}
